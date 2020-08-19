@@ -57,10 +57,6 @@ var LIBS = {
 		"../cms/public/back/libs/misc/jvectormap/maps/jquery-jvectormap-world-mill.js",
 		"../cms/public/back/libs/misc/jvectormap/maps/jquery-jvectormap-africa-mill.js"
 	],
-	summernote: [
-		"../cms/public/back/libs/bower/summernote/dist/summernote.css",
-		"../cms/public/back/libs/bower/summernote/dist/summernote.min.js"
-	],
 	DataTable: [
 		"../cms/public/back/libs/misc/datatables/datatables.min.css",
 		"../cms/public/back/libs/misc/datatables/datatables.min.js"
@@ -79,8 +75,6 @@ var LIBS = {
 		"../cms/public/back/libs/bower/counterup/jquery.counterup.min.js"
 	],
 	others: [
-		"../cms/public/back/libs/bower/switchery/dist/switchery.min.css",
-		"../cms/public/back/libs/bower/switchery/dist/switchery.min.js",
 		"../cms/public/back/libs/bower/lightbox2/dist/css/lightbox.min.css",
 		"../cms/public/back/libs/bower/lightbox2/dist/js/lightbox.min.js"
 	]
