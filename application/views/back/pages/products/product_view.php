@@ -18,11 +18,17 @@
                     <div class="col-md-12">
                         <div class="widget">
                             <header class="widget-header">
-                                <h4 class="widget-title">Default DataTable</h4>
+                                <a href="" class="btn btn-primary btn-outline rounded pull-right"><i class="fa fa-plus"></i> Ürün Ekle</a>
+                                <h4 class="widget-title pull-left">Ürün Listesi</h4>
                             </header><!-- .widget-header -->
                             <hr class="widget-separator">
                             <div class="widget-body">
                                 <div class="table-responsive">
+                                    <div class="alert alert-info text-center">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4>Herhangi Bir Kayıt Bulunamadı.</h4>
+                                        <p>Eklemek için <a href="">tıklayınız.</a></p>
+                                    </div>
                                     <table id="default-datatable" data-plugin="DataTable" class="table table-striped"
                                         cellspacing="0" width="100%">
                                         <thead>
@@ -41,13 +47,14 @@
                                                 <td>System Architect</td>
                                                 <td>Edinburgh</td>
                                                 <td>61</td>
-                                                <td>0/1</td>
+                                                <td>
+                                                    <input id="switch-2-2" type="checkbox" data-switchery data-color="#10c469" checked />
+                                                </td>
                                                 <td>
                                                     <a href="#" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i> Düzenle</a>
                                                     <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Sil</a>
                                                 </td>
-                                            </tr>
-                                           
+                                            </tr>                                    
                                         </tbody>
                                     </table>
                                 </div>
