@@ -56,7 +56,7 @@
                                                         <input id="switch-2-2" type="checkbox" data-switchery data-color="#10c469" <?php if($product->isActive == 1){ ?> checked <?php } ?> />
                                                     </td>
                                                     <td>
-                                                        <a href="#" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i> Düzenle</a>
+                                                        <a href="<?php echo base_url("products/update_page/$product->id")  ?>" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i> Düzenle</a>
                                                         <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Sil</a>
                                                     </td>
                                                 </tr>  
