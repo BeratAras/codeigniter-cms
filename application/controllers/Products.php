@@ -97,4 +97,18 @@ class Products extends CI_Controller {
 			}
 		}
 	}
+
+	public function delete($id)
+	{
+		$result = $this->general_model->delete('products', ['id' => $id]);
+		
+		if($result)
+		{
+			redirect(base_url('products'));
+		}
+		else
+		{
+			echo "update başarısız";
+		}
+	}
 }

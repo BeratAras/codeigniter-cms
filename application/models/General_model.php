@@ -25,6 +25,11 @@ class General_model extends CI_Model {
     {
         return $this->db->where($where)->update($table, $data);
     }
+
+    public function delete($table, $where = array())
+    {
+        return $this->db->where($where)->delete($table);
+    }
 }
 
 ?>

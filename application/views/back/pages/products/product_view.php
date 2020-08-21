@@ -57,7 +57,7 @@
                                                     </td>
                                                     <td>
                                                         <a href="<?php echo base_url("products/update_page/$product->id")  ?>" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i> Düzenle</a>
-                                                        <a href="#" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Sil</a>
+                                                        <a href="<?php echo base_url("products/delete/$product->id") ?>" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Sil</a>
                                                     </td>
                                                 </tr>  
                                             <?php } ?>                                  
