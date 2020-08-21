@@ -75,6 +75,8 @@ var LIBS = {
 		"../cms/public/back/libs/bower/counterup/jquery.counterup.min.js"
 	],
 	others: [
+		"../cms/public/back/libs/bower/switchery/dist/switchery.min.css",
+		"../cms/public/back/libs/bower/switchery/dist/switchery.min.js",
 		"../cms/public/back/libs/bower/lightbox2/dist/css/lightbox.min.css",
 		"../cms/public/back/libs/bower/lightbox2/dist/js/lightbox.min.js"
 	]

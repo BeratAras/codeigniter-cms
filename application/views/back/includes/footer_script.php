@@ -17,6 +17,9 @@
 <script src="<?php echo base_url("public/back") ?>/libs/bower/moment/moment.js"></script>
 <script src="<?php echo base_url("public/back") ?>/libs/bower/fullcalendar/dist/fullcalendar.min.js"></script>
 <script src="<?php echo base_url("public/back") ?>/assets/js/fullcalendar.js"></script>
-</body>
+<script src="<?php echo base_url("public/back") ?>/assets/js/sweatalert2.all.js"></script>
+<script src="<?php echo base_url("public/back") ?>/assets/js/custom.js"></script>
 
+
+</body>
 </html>
