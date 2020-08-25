@@ -8,3 +8,4 @@ $route['translate_uri_dashes'] = FALSE;
 //back
 $route['products'] = 'Products';
 $route['news'] = 'News';
+$route['references'] = 'References';

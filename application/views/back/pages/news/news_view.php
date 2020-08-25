@@ -21,7 +21,7 @@
                                 <a href="<?php echo base_url("news/add_page") ?>" class="btn btn-primary btn-outline rounded pull-right">
                                     <i class="fa fa-plus"></i> Haber Ekle
                                 </a>
-                                <h4 class="widget-title pull-left">Haber  Listesi</h4>
+                                <h4 class="widget-title pull-left">Haber Listesi</h4>
                             </header><!-- .widget-header -->
                             <hr class="widget-separator">
                             <div class="widget-body">

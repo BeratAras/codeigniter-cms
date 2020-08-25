@@ -18,19 +18,19 @@
                     <div class="col-md-12">
                         <div class="widget">
                             <header class="widget-header">
-                                <a href="<?php echo base_url("news/add_page") ?>" class="btn btn-primary btn-outline rounded pull-right">
-                                    <i class="fa fa-plus"></i> Haber Ekle
+                                <a href="<?php echo base_url("references/add_page") ?>" class="btn btn-primary btn-outline rounded pull-right">
+                                    <i class="fa fa-plus"></i> Referans Ekle
                                 </a>
-                                <h4 class="widget-title pull-left">Haber  Listesi</h4>
+                                <h4 class="widget-title pull-left">Referans Listesi</h4>
                             </header><!-- .widget-header -->
                             <hr class="widget-separator">
                             <div class="widget-body">
                                 <div class="table-responsive">
-                                    <?php if(empty($news)){ ?>
+                                    <?php if(empty($references)){ ?>
                                         <div class="alert alert-info text-center">
                                             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                             <h4>Herhangi Bir Kayıt Bulunamadı.</h4>
-                                            <p>Eklemek için <a href="<?php echo base_url("news/add_page") ?>">tıklayınız.</a></p>
+                                            <p>Eklemek için <a href="<?php echo base_url("references/add_page") ?>">tıklayınız.</a></p>
                                         </div>
                                     <?php } ?>
                                     <table id="default-datatable" data-plugin="DataTable" class="table table-bordered table-striped table-hover"
@@ -41,48 +41,36 @@
                                                 <th>Url</th>
                                                 <th>Başlık</th>
                                                 <th>Açıklama</th>
-                                                <th>Haber Türü</th>
                                                 <th>Görsel</th>
                                                 <th>Durumu</th>
                                                 <th>İşlem</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php foreach($news as $news){ ?>
+                                            <?php foreach($references as $references){ ?>
                                                 <tr>
-                                                    <td><?php echo $news->id ?></td>
-                                                    <td><?php echo $news->url ?></td>
-                                                    <td><?php echo $news->title ?></td>
-                                                    <td><?php echo $news->description ?></td>
-                                                    <td><?php echo $news->news_type ?></td>
+                                                    <td><?php echo $references->id ?></td>
+                                                    <td><?php echo $references->url ?></td>
+                                                    <td><?php echo $references->title ?></td>
+                                                    <td><?php echo $references->description ?></td>
                                                     <td>
-                                                        <?php if($news->news_type == "image"){ ?>
-                                                            <img src="<?php echo base_url("uploads/news/$news->img_url") ?>" alt="<?php echo $news->title ?>" height="50" width="50">
-                                                        <?php }else{ ?>
-                                                                <iframe 
-                                                                width="350" 
-                                                                height="200"
-                                                                src="<?php echo $news->video_url ?>" 
-                                                                frameborder="0" 
-                                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                                                                allowfullscreen></iframe>
-                                                        <?php } ?>
+                                                        <img src="<?php echo base_url("uploads/references/$references->img_url") ?>" height="50" width="50">
                                                     </td>
-                                                    <?php $table = "news" ?>
+                                                    <?php $table = "references" ?>
                                                     <td>
                                                         <input 
-                                                            data-url="<?php echo base_url("news/isActiveSetter/$news->id/$table") ?>"
+                                                            data-url="<?php echo base_url("references/isActiveSetter/$references->id/$table") ?>"
                                                             class="is-active"
                                                             id="switch-2-2" 
                                                             type="checkbox" 
                                                             data-switchery data-color="#10c469" 
-                                                            <?php if($news->isActive == 1){ ?> checked <?php } ?> 
+                                                            <?php if($references->isActive == 1){ ?> checked <?php } ?> 
                                                         />
                                                     </td>
                                                     <td>
-                                                        <a href="<?php echo base_url("news/update_page/$news->id")  ?>" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Düzenle</a>
+                                                        <a href="<?php echo base_url("references/update_page/$references->id")  ?>" class="btn btn-primary btn-sm"><i class="fa fa-pencil"></i> Düzenle</a>
                                                         <button 
-                                                        data-url="<?php echo base_url("news/delete/$news->id/$table") ?>" 
+                                                        data-url="<?php echo base_url("references/delete/$references->id/$table") ?>" 
                                                         class="btn btn-danger btn-sm remove-btn"><i class="fa fa-trash"></i> Sil
                                                         </button>
                                                     </td>
