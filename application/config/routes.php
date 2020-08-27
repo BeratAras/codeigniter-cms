@@ -9,3 +9,6 @@ $route['translate_uri_dashes'] = FALSE;
 $route['products'] = 'Products';
 $route['news'] = 'News';
 $route['references'] = 'References';
+$route['users'] = 'Users';
+$route['login'] = 'Auth';
+$route['logout'] = 'Auth/logout';
