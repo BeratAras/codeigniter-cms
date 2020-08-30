@@ -39,7 +39,7 @@
         </div>
 
         <div class="simple-page-footer">
-            <p><a href="password-forget.html">Şifreni mi Unuttun?</a></p>
+            <p><a href="<?php echo base_url("password-forget") ?>">Şifreni mi Unuttun?</a></p>
         </div>
 
 

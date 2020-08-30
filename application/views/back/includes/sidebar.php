@@ -80,11 +80,38 @@
                     </a>
                 </li>
 
+                <li class="has-submenu">
+                    <a href="javascript:void(0)" class="submenu-toggle">
+                        <i class="menu-icon fa fa-asterisk"></i>
+                        <span class="menu-text">Portfolyo İşlemleri</span>
+                        <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="<?php echo base_url("portfolio"); ?>">
+                                <span class="menu-text">Portfolyo</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url("portfolio_categories"); ?>">
+                                <span class="menu-text">Portfolyo Kategorileri</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
 
                 <li>
                     <a href="javascript:void(0)">
                         <i class="menu-icon zmdi zmdi-lamp zmdi-hc-lg"></i>
                         <span class="menu-text">Popup Hizmeti</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="<?php echo base_url("email") ?>">
+                        <i class="menu-icon zmdi zmdi-email zmdi-hc-lg"></i>
+                        <span class="menu-text">E-Posta Hizmeti</span>
                     </a>
                 </li>
 
@@ -97,9 +124,9 @@
 
                 
                 <li>
-                    <a href="javascript:void(0)">
+                    <a href="<?php echo base_url("settings") ?>">
                         <i class="menu-icon zmdi zmdi-settings zmdi-hc-lg"></i>
-                        <span class="menu-text">Settings</span>
+                        <span class="menu-text">Ayarlar</span>
                     </a>
                 </li>
 

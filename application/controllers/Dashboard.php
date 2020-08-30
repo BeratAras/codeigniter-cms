@@ -12,10 +12,13 @@ class Dashboard extends CI_Controller {
 		{
 			redirect(base_url("login"));
 		}
+		$this->load->model('general_model');
 	}
 
 	public function index()
 	{
-		$this->load->view('back/dashboard');
+		$data = new stdClass();
+		$data->settings = $this->general_model->get_where('settings', ["id" => 1]);
+		$this->load->view('back/dashboard', $data);
 	}
 }

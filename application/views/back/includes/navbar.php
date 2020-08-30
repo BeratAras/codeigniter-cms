@@ -1,3 +1,4 @@
+<?php $settings = get_settings() ?>
 <!-- APP NAVBAR ==========-->
 <nav id="app-navbar" class="navbar navbar-inverse navbar-fixed-top primary">
   
@@ -18,9 +19,13 @@
       <span class="zmdi zmdi-hc-lg zmdi-search"></span>
     </button>
 
-    <a href="<?php echo base_url('dashboard') ?>" class="navbar-brand">
-      <span class="brand-icon"><i class="fa fa-gg"></i></span>
-      <span class="brand-name">Infinity</span>
+    <a href="<?php echo base_url('dashboard') ?>" class="navbar-brand text-center">
+      <div class="pull-left">
+        <img src="<?php echo base_url("uploads/logo/$settings->logo") ?>" width="50" height="50">
+      </div>
+      <div class="text-center" style="margin-left: 10px; margin-top: 10px;">
+        <span class="brand-name"><?php echo $settings->company_name ?></span>
+      </div>
     </a>
   </div><!-- .navbar-header -->
   

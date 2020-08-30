@@ -1,3 +1,4 @@
+<?php $settings = get_settings() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
 	<meta name="description" content="Admin, Dashboard, Bootstrap" />
 	<link rel="shortcut icon" sizes="196x196" href="<?php echo base_url("public/back") ?>/assets/images/logo.png">
-	<title>Berat Aras - CMS</title>
+	<title><?php echo $settings->company_name ?></title>
 	
 	<link rel="stylesheet" href="<?php echo base_url("public/back") ?>/libs/bower/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?php echo base_url("public/back") ?>/libs/bower/material-design-iconic-font/dist/css/material-design-iconic-font.css">

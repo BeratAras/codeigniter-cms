@@ -25,5 +25,13 @@ function get_check_user()
 	}
 }
 
+function get_settings()
+{
+	$t = &get_instance();
+	$t->load->model('general_model');
+	$settings = $t->general_model->get_where("settings", ["id" => 1]);
+	return $settings;
+}
+
 
 ?>
